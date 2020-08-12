@@ -1,0 +1,9 @@
+
+<resources>
+
+    <string name="app_name" translatable="false">TestApp</string>
+    <string name="button_fragment_dialog" translatable="false">Фрагмент \n диалога</string>
+    <string name="name" translatable="false">и что</string>
+    <string name="asdasd">sddsds</string>
+    <string name="button_service">Сервисы</string>
+</resources>
