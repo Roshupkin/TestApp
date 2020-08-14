@@ -16,5 +16,6 @@ class TimeBroacastReceiver : BroadcastReceiver() {
         val formatter: Format = SimpleDateFormat("hh:mm:ss a")
         msgStr.append(formatter.format(Date()))
         Toast.makeText(context, msgStr, Toast.LENGTH_SHORT).show()
+
     }
 }

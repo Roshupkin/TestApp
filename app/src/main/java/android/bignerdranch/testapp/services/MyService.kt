@@ -27,7 +27,7 @@ class MyService : Service() {
     }
 
     private fun NumberRand(num: Int): Int {
-        val number = Random.nextInt(0,num)
+        val number = Random.nextInt(0, num)
         return number
     }
 }

@@ -39,9 +39,9 @@ class ServiceFragment : Fragment() {
             activity?.stopService(intentMyService)
             Toast.makeText(context, "stop service", Toast.LENGTH_SHORT).show()
         }
-
+        /**передача данных MyIntentService**/
         button_start_myintentservice.setOnClickListener {
-            intentMyIntService.putExtra("name","Максим").putExtra("age", 23)
+            intentMyIntService.putExtra("name", "Максим").putExtra("age", 23)
             activity?.startService(intentMyIntService)
         }
 

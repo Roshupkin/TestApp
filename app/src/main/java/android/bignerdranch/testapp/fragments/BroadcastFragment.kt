@@ -1,6 +1,7 @@
 package android.bignerdranch.testapp.fragments
 
 import android.bignerdranch.testapp.R
+import android.bignerdranch.testapp.broadcastreceivers.FullNameBroadcastReceiver
 import android.bignerdranch.testapp.broadcastreceivers.TimeBroacastReceiver
 import android.content.Intent
 import android.content.IntentFilter
@@ -14,6 +15,8 @@ import kotlinx.android.synthetic.main.fragment_broadcast.*
 
 class BroadcastFragment : Fragment() {
     private val mTimeBroadCastReceiver = TimeBroacastReceiver()
+    private val mFullNameBroadcastReceiver = FullNameBroadcastReceiver()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -54,6 +57,11 @@ class BroadcastFragment : Fragment() {
                 "android.bignerdranch.testapp.action.NAME"
             )
         )
+        activity?.registerReceiver(
+            mFullNameBroadcastReceiver,
+            IntentFilter("android.bignerdranch.testapp.services.INTENT.FULLNAME")
+        )
+
         Toast.makeText(context, "Приёмник включен", Toast.LENGTH_SHORT).show()
     }
 
