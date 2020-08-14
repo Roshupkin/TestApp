@@ -6,4 +6,6 @@
     <string name="name" translatable="false">и что</string>
     <string name="asdasd">sddsds</string>
     <string name="button_service">Сервисы</string>
+    <string name="button_broadcast">Широковещательное \n сообщение</string>
+    <string name="txt_back">Назад</string>
 </resources>

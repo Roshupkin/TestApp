@@ -1,4 +1,4 @@
-package android.bignerdranch.testapp.fragment
+package android.bignerdranch.testapp.fragments
 
 import android.bignerdranch.testapp.R
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 
 /**фрагмент диалога**/
-class FragmentDialog : DialogFragment() {
+class DialogFragmen : DialogFragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

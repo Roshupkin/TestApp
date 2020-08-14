@@ -4,4 +4,13 @@
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="green">#43A047</color>
+    <color name="yellow">#FFEE58</color>
+    <color name="primary_purple">#D1C4E9</color>
+    <color name="primary_orange">#FFCCBC</color>
+    <color name="primary_tail">#009688</color>
+    <color name="primary_gray">#607D8B</color>
+    <color name="dividy_gray">#4DBDBDBD</color>
+    <color name="accent_red_green">#FF5252</color>
+    <color name="accent_indigo">#42A5F5</color>
+    <color name="primary_indigo_tail">#C5CAE9</color>
 </resources>

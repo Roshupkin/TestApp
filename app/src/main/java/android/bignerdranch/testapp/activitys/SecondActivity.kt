@@ -1,4 +1,4 @@
-package android.bignerdranch.testapp.activity
+package android.bignerdranch.testapp.activitys
 
 import android.bignerdranch.testapp.R
 import android.os.Bundle

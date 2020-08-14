@@ -1,4 +1,4 @@
-package android.bignerdranch.testapp.broadcastreceiver
+package android.bignerdranch.testapp.broadcastreceivers
 
 import android.content.BroadcastReceiver
 import android.content.Context

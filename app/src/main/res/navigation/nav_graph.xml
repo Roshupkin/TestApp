@@ -6,12 +6,14 @@
     app:startDestination="@id/mainFragment"
     tools:ignore="UnusedNavigation">
     <dialog
+        tools:layout="@layout/dilog_fragment_hi"
         android:id="@+id/fragmentDialog"
-        android:name="android.bignerdranch.testapp.fragment.FragmentDialog"
+        android:name="android.bignerdranch.testapp.fragments.DialogFragmen"
         android:label="FragmentDialog" />
     <fragment
+        tools:layout="@layout/fragment_main"
         android:id="@+id/mainFragment"
-        android:name="android.bignerdranch.testapp.fragment.MainFragment"
+        android:name="android.bignerdranch.testapp.fragments.MainFragment"
         android:label="MainFragment" >
         <action
             android:id="@+id/action_mainFragment_to_fragmentDialog"
@@ -19,9 +21,26 @@
         <action
             android:id="@+id/action_mainFragment_to_secondActivity"
             app:destination="@id/secondActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_broadcastFragment"
+            app:destination="@id/broadcastFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_srviceFragment"
+            app:destination="@id/serviceFragment" />
     </fragment>
     <activity
+        tools:layout="@layout/second_activity"
         android:id="@+id/secondActivity"
-        android:name="android.bignerdranch.testapp.activity.SecondActivity"
+        android:name="android.bignerdranch.testapp.activitys.SecondActivity"
         android:label="SecondActivity" />
+    <fragment
+        tools:layout="@layout/fragment_broadcast"
+        android:id="@+id/broadcastFragment"
+        android:name="android.bignerdranch.testapp.fragments.BroadcastFragment"
+        android:label="BroadcastFragment" />
+    <fragment
+        tools:layout="@layout/fragment_service"
+        android:id="@+id/serviceFragment"
+        android:name="android.bignerdranch.testapp.fragments.ServiceFragment"
+        android:label="SrviceFragment" />
 </navigation>
