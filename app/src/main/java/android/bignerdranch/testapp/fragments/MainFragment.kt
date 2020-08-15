@@ -23,7 +23,7 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         button_fragmen_dilog.setOnClickListener {
-            /**передача контролеру фрагмента по нажатию кнопки **/
+            /**открытие фрагмента диалог **/
             findNavController().navigate(R.id.fragmentDialog)
         }
         button_service.setOnClickListener {

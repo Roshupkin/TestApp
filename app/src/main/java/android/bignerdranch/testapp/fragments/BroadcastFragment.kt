@@ -42,7 +42,7 @@ class BroadcastFragment : Fragment() {
 
     }
 
-
+    //метод отправки широковещательного сообщения
     fun setBrodcastSend() {
         val intentBroadcast = Intent("android.bignerdranch.testapp.action.NAME")
         intentBroadcast.putExtra("name", "Maksim")
@@ -51,6 +51,7 @@ class BroadcastFragment : Fragment() {
         Toast.makeText(context, "Send", Toast.LENGTH_SHORT).show()
     }
 
+    // регистрация слушателя широковещательных сообщений
     fun registerBroadcastReceiver() {
         activity?.registerReceiver(
             mTimeBroadCastReceiver, IntentFilter(

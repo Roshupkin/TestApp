@@ -10,7 +10,7 @@ import java.util.*
 
 
 class TimeBroacastReceiver : BroadcastReceiver() {
-
+/**действует по команде слушателя**/
     override fun onReceive(context: Context, intent: Intent) {
         val msgStr = StringBuilder("Текущее время: ")
         val formatter: Format = SimpleDateFormat("hh:mm:ss a")

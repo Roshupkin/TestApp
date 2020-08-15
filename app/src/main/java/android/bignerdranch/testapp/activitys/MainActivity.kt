@@ -2,6 +2,7 @@ package android.bignerdranch.testapp.activitys
 
 import android.bignerdranch.testapp.R
 import android.bignerdranch.testapp.broadcastreceivers.TimeBroacastReceiver
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -9,24 +10,18 @@ import androidx.navigation.findNavController
 
 /** хост активити **/
 class MainActivity : AppCompatActivity() {
-    private val mTimeBroadCastReceiver =
-        TimeBroacastReceiver()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         /** передача данных между активити**/
-        /*
-        val intent: Intent = Intent(this , SecondActivity::class.java)
+       /* val intent = Intent(this, SecondActivity::class.java)
         val old = 29
-        var name = "Максим"
-        var secondName = "Рощупкин"
-        intent.putExtra("Im", old )
+        val name = "Максим"
+        val secondName = "Рощупкин"
+        intent.putExtra("Im", old).putExtra("name", name).putExtra("secondName", secondName)
         startActivity(intent)*/
-        /** Intent service class MyIntentService**/
-        /* val intnentMyIntentService = Intent(this, MyIntentService::class.java)
-         startService(intnentMyIntentService)*/
-
 
     }
 
