@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         /** передача данных между активити**/
        /* val intent = Intent(this, SecondActivity::class.java)
         val old = 29

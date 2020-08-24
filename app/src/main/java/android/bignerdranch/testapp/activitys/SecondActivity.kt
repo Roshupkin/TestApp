@@ -1,9 +1,9 @@
 package android.bignerdranch.testapp.activitys
 
 import android.bignerdranch.testapp.R
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import kotlinx.android.synthetic.main.second_activity.*
 
 // передача данных между активити
@@ -19,7 +19,9 @@ class SecondActivity : AppCompatActivity() {
 
 
         button_back.setOnClickListener {
-            
+            val intentFirstActivity = Intent(this, MainActivity::class.java)
+            startActivity(intentFirstActivity)
+
         }
 
     }

@@ -27,6 +27,9 @@
         <action
             android:id="@+id/action_mainFragment_to_srviceFragment"
             app:destination="@id/serviceFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_dynamicUIFragment"
+            app:destination="@id/dynamicUIFragment" />
     </fragment>
     <activity
         tools:layout="@layout/second_activity"
@@ -43,4 +46,26 @@
         android:id="@+id/serviceFragment"
         android:name="android.bignerdranch.testapp.fragments.ServiceFragment"
         android:label="SrviceFragment" />
+    <fragment
+        tools:layout="@layout/dynamic_ui_fragment"
+        android:id="@+id/dynamicUIFragment"
+        android:name="android.bignerdranch.testapp.fragments.DynamicUIFragment"
+        android:label="DynamicUIFragment" >
+        <action
+            android:id="@+id/action_dynamicUIFragment_to_consrainAnimationFragment2"
+            app:destination="@id/consrainAnimationFragment" />
+        <action
+            android:id="@+id/action_dynamicUIFragment_to_drawFragment"
+            app:destination="@id/drawFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/constrainanim_fragment1"
+        android:id="@+id/consrainAnimationFragment"
+        android:name="android.bignerdranch.testapp.fragments.ConsrainAnimationFragment"
+        android:label="ConsrainAnimationFragment" />
+    <fragment
+        tools:layout="@layout/custom_draw_fragment"
+        android:id="@+id/drawFragment"
+        android:name="android.bignerdranch.testapp.fragments.DrawFragment"
+        android:label="DrawFragment" />
 </navigation>
