@@ -36,7 +36,7 @@ class MainFragment : Fragment() {
         button_secondactivity.setOnClickListener {
             findNavController().navigate(R.id.secondActivity)
         }
-        button_animation.setOnClickListener {
+        button_ui_anim.setOnClickListener {
             findNavController().navigate(R.id.dynamicUIFragment)
 
         }

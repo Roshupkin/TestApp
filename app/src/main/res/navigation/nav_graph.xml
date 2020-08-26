@@ -52,11 +52,31 @@
         android:name="android.bignerdranch.testapp.fragments.DynamicUIFragment"
         android:label="DynamicUIFragment" >
         <action
-            android:id="@+id/action_dynamicUIFragment_to_consrainAnimationFragment2"
-            app:destination="@id/consrainAnimationFragment" />
-        <action
             android:id="@+id/action_dynamicUIFragment_to_drawFragment"
             app:destination="@id/drawFragment" />
+        <action
+            android:id="@+id/action_dynamicUIFragment_to_choiseAnimFragment"
+            app:destination="@id/choiseAnimFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/custom_draw_fragment"
+        android:id="@+id/drawFragment"
+        android:name="android.bignerdranch.testapp.fragments.DrawFragment"
+        android:label="DrawFragment" />
+    <fragment
+        tools:layout="@layout/animationschose_frament"
+        android:id="@+id/choiseAnimFragment"
+        android:name="android.bignerdranch.testapp.fragments.ChoiseAnimFragment"
+        android:label="ChoiseAnimFragment" >
+        <action
+            android:id="@+id/action_choiseAnimFragment_to_consrainAnimationFragment"
+            app:destination="@id/consrainAnimationFragment" />
+        <action
+            android:id="@+id/action_choiseAnimFragment_to_simpleAnimFragment"
+            app:destination="@id/simpleAnimFragment" />
+        <action
+            android:id="@+id/action_choiseAnimFragment_to_motionAnimFragment"
+            app:destination="@id/motionAnimFragment" />
     </fragment>
     <fragment
         tools:layout="@layout/constrainanim_fragment1"
@@ -64,8 +84,13 @@
         android:name="android.bignerdranch.testapp.fragments.ConsrainAnimationFragment"
         android:label="ConsrainAnimationFragment" />
     <fragment
-        tools:layout="@layout/custom_draw_fragment"
-        android:id="@+id/drawFragment"
-        android:name="android.bignerdranch.testapp.fragments.DrawFragment"
-        android:label="DrawFragment" />
+        tools:layout="@layout/motionanim_fragment"
+        android:id="@+id/motionAnimFragment"
+        android:name="android.bignerdranch.testapp.fragments.MotionAnimFragment"
+        android:label="MotionAnimFragment" />
+    <fragment
+        tools:layout="@layout/simpleanim_fragment"
+        android:id="@+id/simpleAnimFragment"
+        android:name="android.bignerdranch.testapp.fragments.SimpleAnimFragment"
+        android:label="SimpleAnimFragment" />
 </navigation>

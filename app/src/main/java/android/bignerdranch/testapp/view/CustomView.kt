@@ -10,13 +10,13 @@ import android.view.View
 class CustomView(context: Context, attrs: AttributeSet) : View(context, attrs) {
     private val paint = Paint(Paint.ANTI_ALIAS_FLAG)
     private val x1 = 10f
-    private val y1 = 4f
+    private val y1 = 100f
     private val x2 = 1000f
-    private val y2 = 1000f
+    private val y2 = 1500f
 
     override fun onDraw(canvas: Canvas?) {
         super.onDraw(canvas)
-        paint.color = Color.BLACK
+        paint.color = Color.RED
         paint.style = Paint.Style.STROKE
         paint.strokeWidth = 20f
 
